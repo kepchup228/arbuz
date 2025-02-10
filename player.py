@@ -51,7 +51,7 @@ class Player:
         bar_x = self.rect.x + (self.rect.width - bar_width) // 2
         bar_y = self.rect.y - 15
 
-        # рисуем красный фон шкалы хп
+        # рисуем красный фон шкалы
         pygame.draw.rect(surface, RED, (bar_x, bar_y, bar_width, bar_height))
         # рисуем зеленую часть шкалы хп
         pygame.draw.rect(surface, GREEN, (bar_x, bar_y, bar_width * health_ratio, bar_height))
