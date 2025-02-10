@@ -2,6 +2,7 @@ import pygame
 import os
 from settings import *
 
+
 class Player:
     def __init__(self):
         self.image_path = 'data/images/player.png'

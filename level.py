@@ -5,6 +5,7 @@ from enemy import Enemy
 from item import Item
 from settings import *
 
+
 class Level:
     def __init__(self):
         self.player = Player()  # игрок
@@ -56,7 +57,7 @@ class Level:
         self.spawn_coins()  # спавн монет
 
     def draw(self, surface):
-        surface.fill(WHITE) 
+        surface.fill(WHITE)
 
         if self.player.health <= 0:
             self.display_game_over(surface)  # конец игры
@@ -178,7 +179,7 @@ class GameOverText(pygame.sprite.Sprite):
         self.n -= 2  # уменьшение 
         if self.n < 0:
             self.n = 0
-        self.image.set_alpha(self.n) 
+        self.image.set_alpha(self.n)
 
     def draw(self, surface):
         surface.blit(self.image, self.rect)  # отрисовка текста

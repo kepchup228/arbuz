@@ -2,6 +2,7 @@ import pygame
 from level import Level
 from settings import *
 
+
 class Game:
     def __init__(self):
         pygame.init()
@@ -24,9 +25,11 @@ class Game:
 
         pygame.quit()
 
+
 def main():
     game = Game()
     game.run()
+
 
 if __name__ == "__main__":
     main()

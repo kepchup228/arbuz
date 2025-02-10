@@ -3,6 +3,7 @@ import os
 import random
 from settings import WIDTH, HEIGHT
 
+
 class Item:
     def __init__(self):
         self.image_path = 'data/images/item.png'

@@ -2,6 +2,7 @@ import pygame
 from game import Game
 from settings import *
 
+
 class StartScreen:
     def __init__(self):
         self.title_font = pygame.font.Font(None, 30)  # шрифт для заголовков
@@ -63,7 +64,7 @@ class StartScreen:
                     else:  # обычный текст
                         instruction_text = self.body_font.render(part, True, self.body_color)
                     surface.blit(instruction_text, (x, 100 + i * 25 + self.scroll_offset))
-                    x += instruction_text.get_width()  # Обновляем позицию x
+                    x += instruction_text.get_width()  # обновляем позицию x
             else:
                 instruction_text = self.body_font.render(line, True, self.body_color)
                 surface.blit(instruction_text, (50, 100 + i * 25 + self.scroll_offset))
